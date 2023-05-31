@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController
+  defaults:
+    route: 'note_index'
+    # optionally you can define some arguments passed to the route
+    # redirections are temporary by default (code 302) but you can make them permanent (code 301)
+    permanent: true
+

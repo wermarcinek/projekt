@@ -12,10 +12,16 @@
     {% endblock %}
 </head>
 <body>
-<main role="main" class="container-fluid">
-
+<div class="container-fluid">
+    {% for type, messages in app.session.flashBag.all %}
+        {% for message in messages %}
+            <div class="alert alert-{{ type }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
     {% block body %}{% endblock %}
-</main>
+</div>
 {% block javascripts %}
     <script
             src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -30,6 +36,5 @@
             integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
             crossorigin="anonymous"></script>
 {% endblock %}
-
 </body>
 </html>
