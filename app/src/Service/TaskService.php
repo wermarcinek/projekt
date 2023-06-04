@@ -7,6 +7,8 @@ namespace App\Service;
 
 use App\Entity\Task;
 use App\Repository\TaskRepository;
+use Doctrine\ORM\NonUniqueResultException;
+use Knp\Bundle\PaginatorBundle\Pagination\SlidingPagination;
 use Knp\Component\Pager\Pagination\PaginationInterface;
 use Knp\Component\Pager\PaginatorInterface;
 
@@ -16,9 +18,9 @@ use Knp\Component\Pager\PaginatorInterface;
 class TaskService implements TaskServiceInterface
 {
     /**
-     * Task repository.
+     * Category service.
      */
-    private TaskRepository $taskRepository;
+    private CategoryServiceInterface $categoryService;
 
     /**
      * Paginator.
@@ -26,28 +28,43 @@ class TaskService implements TaskServiceInterface
     private PaginatorInterface $paginator;
 
     /**
+     * Task repository.
+     */
+    private TaskRepository $taskRepository;
+
+    /**
      * Constructor.
      *
-     * @param TaskRepository     $taskRepository Task repository
-     * @param PaginatorInterface $paginator      Paginator
+     * @param CategoryServiceInterface $categoryService Category service
+     * @param PaginatorInterface       $paginator       Paginator
+     * @param TaskRepository           $taskRepository  Task repository
      */
-    public function __construct(TaskRepository $taskRepository, PaginatorInterface $paginator)
-    {
-        $this->taskRepository = $taskRepository;
+    public function __construct(
+        CategoryServiceInterface $categoryService,
+        PaginatorInterface $paginator,
+        TaskRepository $taskRepository
+    ) {
+        $this->categoryService = $categoryService;
         $this->paginator = $paginator;
+        $this->taskRepository = $taskRepository;
     }
 
     /**
      * Get paginated list.
      *
-     * @param int $page Page number
+     * @param int                $page    Page number
+     * @param array<string, int> $filters Filters array
      *
-     * @return PaginationInterface<string, mixed> Paginated list
+     * @return PaginationInterface<SlidingPagination> Paginated list
+     *
+     * @throws NonUniqueResultException
      */
-    public function getPaginatedList(int $page): PaginationInterface
+    public function getPaginatedList(int $page, array $filters = []): PaginationInterface
     {
+        $filters = $this->prepareFilters($filters);
+
         return $this->paginator->paginate(
-            $this->taskRepository->queryAll(),
+            $this->taskRepository->queryAll($filters),
             $page,
             TaskRepository::PAGINATOR_ITEMS_PER_PAGE
         );
@@ -73,4 +90,25 @@ class TaskService implements TaskServiceInterface
         $this->taskRepository->delete($task);
     }
 
+    /**
+     * Prepare filters for the tasks list.
+     *
+     * @param array<string, int> $filters Raw filters from request
+     *
+     * @return array<string, object> Result array of filters
+     *
+     * @throws NonUniqueResultException
+     */
+    public function prepareFilters(array $filters): array
+    {
+        $resultFilters = [];
+        if (!empty($filters['category_id'])) {
+            $category = $this->categoryService->findOneById($filters['category_id']);
+            if (null !== $category) {
+                $resultFilters['category'] = $category;
+            }
+        }
+
+        return $resultFilters;
+    }
 }

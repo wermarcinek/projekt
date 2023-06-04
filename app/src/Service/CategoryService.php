@@ -1,12 +1,13 @@
 <?php
 /**
- * Category Service.
+ * Category service.
  */
 
 namespace App\Service;
 
 use App\Entity\Category;
 use App\Repository\CategoryRepository;
+use App\Repository\TaskRepository;
 use Doctrine\ORM\NonUniqueResultException;
 use Doctrine\ORM\NoResultException;
 use Knp\Component\Pager\Pagination\PaginationInterface;
@@ -18,11 +19,14 @@ use Knp\Component\Pager\PaginatorInterface;
 class CategoryService implements CategoryServiceInterface
 {
     /**
-     * Category Repository.
+     * Category repository.
      */
     private CategoryRepository $categoryRepository;
 
-
+    /**
+     * Task Repository.
+     */
+    private TaskRepository $taskRepository;
 
     /**
      * Paginator.
@@ -32,23 +36,23 @@ class CategoryService implements CategoryServiceInterface
     /**
      * Constructor.
      *
-     * @param CategoryRepository $categoryRepository Category Repository
+     * @param CategoryRepository $categoryRepository Category repository
      * @param PaginatorInterface $paginator          Paginator
-
+     * @param TaskRepository     $taskRepository     Task repository
      */
-    public function __construct(CategoryRepository $categoryRepository, PaginatorInterface $paginator)
+    public function __construct(CategoryRepository $categoryRepository, PaginatorInterface $paginator, TaskRepository $taskRepository)
     {
         $this->categoryRepository = $categoryRepository;
-
+        $this->taskRepository = $taskRepository;
         $this->paginator = $paginator;
     }
 
     /**
      * Get paginated list.
      *
-     * @param int $page Page
+     * @param int $page Page number
      *
-     * @return PaginationInterface PaginationInterface
+     * @return PaginationInterface<string, mixed> Paginated list
      */
     public function getPaginatedList(int $page): PaginationInterface
     {
@@ -70,6 +74,16 @@ class CategoryService implements CategoryServiceInterface
     }
 
     /**
+     * Delete entity.
+     *
+     * @param Category $category Category entity
+     */
+    public function delete(Category $category): void
+    {
+        $this->categoryRepository->delete($category);
+    }
+
+    /**
      * Can Category be deleted?
      *
      * @param Category $category Category entity
@@ -79,22 +93,12 @@ class CategoryService implements CategoryServiceInterface
     public function canBeDeleted(Category $category): bool
     {
         try {
-            $result = $this->noteRepository->countByCategory($category);
+            $result = $this->taskRepository->countByCategory($category);
 
             return !($result > 0);
         } catch (NoResultException|NonUniqueResultException) {
             return false;
         }
-    }
-
-    /**
-     * Delete entity.
-     *
-     * @param Category $category Category entity
-     */
-    public function delete(Category $category): void
-    {
-        $this->categoryRepository->delete($category);
     }
 
     /**

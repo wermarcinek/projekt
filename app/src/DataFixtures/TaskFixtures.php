@@ -6,10 +6,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Category;
-use App\Entity\Enum\TaskStatus;
-use App\Entity\Tag;
 use App\Entity\Task;
-use App\Entity\User;
 use DateTimeImmutable;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 
@@ -36,7 +33,7 @@ class TaskFixtures extends AbstractBaseFixtures implements DependentFixtureInter
             $task->setTitle($this->faker->sentence);
             $task->setCreatedAt(
                 DateTimeImmutable::createFromMutable(
-                    $this->faker->dateTimeBetween('-200 days', '-5 days')
+                    $this->faker->dateTimeBetween('-100 days', '-1 days')
                 )
             );
             $task->setUpdatedAt(
