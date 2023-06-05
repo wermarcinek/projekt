@@ -1,217 +1,235 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="pl" datatype="plaintext" original="file.ext">
-    <body>
-      <trans-unit id="label.actions">
-        <source>label.actions</source>
-        <target>Akcje</target>
-      </trans-unit>
-      <trans-unit id="label.id">
-        <source>label.id</source>
-        <target>Id</target>
-      </trans-unit>
-      <trans-unit id="label.title">
-        <source>label.title</source>
-        <target>Nazwa</target>
-      </trans-unit>
-      <trans-unit id="label.content">
-        <source>label.content</source>
-        <target>Zawartość</target>
-      </trans-unit>
-      <trans-unit id="message.empty_list">
-        <source>message.empty_list</source>
-        <target>Lista pusta.</target>
-      </trans-unit>
-      <trans-unit id="message.record_not_found">
-        <source>message.record_not_found</source>
-        <target>Nie znaleziono rekordu.</target>
-      </trans-unit>
-      <trans-unit id="message.created_successfully">
-        <source>message.created_successfully</source>
-        <target>Utworzono rekord.</target>
-      </trans-unit>
-      <trans-unit id="message.category_contains_tasks">
-        <source>message.category_contains_tasks</source>
-        <target>Ta kategoria zawiera notatki.</target>
-      </trans-unit>
-      <trans-unit id="message.deleted_successfully">
-        <source>message.deleted_successfully</source>
-        <target>Usunięto rekord.</target>
-      </trans-unit>
-      <trans-unit id="label.task">
-        <source>label.task</source>
-        <target>Zadania</target>
-      </trans-unit>
-      <trans-unit id="label.category">
-        <source>label.category</source>
-        <target>Kategorie</target>
-      </trans-unit>
-      <trans-unit id="label.note">
-        <source>label.note</source>
-        <target>Notatki</target>
-      </trans-unit>
-      <trans-unit id="action.logout">
-        <source>action.logout</source>
-        <target>Wyloguj</target>
-      </trans-unit>
-      <trans-unit id="action.login">
-        <source>action.login</source>
-        <target>Zaloguj</target>
-      </trans-unit>
-      <trans-unit id="action.save">
-        <source>action.save</source>
-        <target>Zapisz</target>
-      </trans-unit>
-      <trans-unit id="title.category_create">
-        <source>title.category_create</source>
-        <target>Stwórz kategorię</target>
-      </trans-unit>
-      <trans-unit id="title.category_delete">
-        <source>title.category_delete</source>
-        <target>Usuń kategorię</target>
-      </trans-unit>
-      <trans-unit id="action.delete">
-        <source>action.delete</source>
-        <target>Usuń</target>
-      </trans-unit>
-      <trans-unit id="title.category_edit">
-        <source>title.category_edit</source>
-        <target>Edytuj kategorię</target>
-      </trans-unit>
-      <trans-unit id="action.edit">
-        <source>action.edit</source>
-        <target>Edytuj</target>
-      </trans-unit>
-      <trans-unit id="title.category_list">
-        <source>title.category_list</source>
-        <target>Lista kategorii</target>
-      </trans-unit>
-      <trans-unit id="action.create">
-        <source>action.create</source>
-        <target>Stwórz rekord</target>
-      </trans-unit>
-      <trans-unit id="label.name">
-        <source>label.name</source>
-        <target>Nazwa</target>
-      </trans-unit>
-      <trans-unit id="action.view">
-        <source>action.view</source>
-        <target>Zobacz</target>
-      </trans-unit>
-      <trans-unit id="title.status_details">
-        <source>title.status_details</source>
-        <target>Status szczegóły</target>
-      </trans-unit>
-      <trans-unit id="title.task_create">
-        <source>title.task_create</source>
-        <target>Stwórz zadanie</target>
-      </trans-unit>
-      <trans-unit id="title.task_delete">
-        <source>title.task_delete</source>
-        <target>Usuń zadanie</target>
-      </trans-unit>
-      <trans-unit id="title.task_edit">
-        <source>title.task_edit</source>
-        <target>Edytuj zadanie</target>
-      </trans-unit>
-      <trans-unit id="title.task_list">
-        <source>title.task_list</source>
-        <target>Lista zadań</target>
-      </trans-unit>
-      <trans-unit id="label.status">
-        <source>label.status</source>
-        <target>Status</target>
-      </trans-unit>
-      <trans-unit id="title.category_details">
-        <source>title.category_details</source>
-        <target>Kategoria szczegóły</target>
-      </trans-unit>
-      <trans-unit id="action.back_to_list">
-        <source>action.back_to_list</source>
-        <target>Wróć</target>
-      </trans-unit>
-      <trans-unit id="message.form_error">
-        <source>message.form_error</source>
-        <target>Błąd formularza</target>
-      </trans-unit>
-      <trans-unit id="title.note_create">
-        <source>title.note_create</source>
-        <target>Stwórz notatkę</target>
-      </trans-unit>
-      <trans-unit id="title.note_delete">
-        <source>title.note_delete</source>
-        <target>Usuń notatkę</target>
-      </trans-unit>
-      <trans-unit id="title.note_edit">
-        <source>title.note_edit</source>
-        <target>Edytuj notatkę</target>
-      </trans-unit>
-      <trans-unit id="title.note_list">
-        <source>title.note_list</source>
-        <target>Lista notatek</target>
-      </trans-unit>
-      <trans-unit id="label.create_time">
-        <source>label.create_time</source>
-        <target>Czas stworzenia</target>
-      </trans-unit>
-      <trans-unit id="title.note_details">
-        <source>title.note_details</source>
-        <target>Notatka szczegóły</target>
-      </trans-unit>
-      <trans-unit id="label.CreateTime">
-        <source>label.CreateTime</source>
-        <target>Czas stworzenia</target>
-      </trans-unit>
-      <trans-unit id="title.status_list">
-        <source>title.status_list</source>
-        <target>Lista statusów</target>
-      </trans-unit>
-      <trans-unit id="title.task_details">
-        <source>title.task_details</source>
-        <target>Zadanie szczegóły</target>
-      </trans-unit>
-      <trans-unit id="label.logged_as">
-        <source>label.logged_as</source>
-        <target>Jesteś zalogowany jako </target>
-      </trans-unit>
-      <trans-unit id="label.sign_in">
-        <source>label.sign_in</source>
-        <target>Zaloguj się</target>
-      </trans-unit>
-      <trans-unit id="label.email">
-        <source>label.email</source>
-        <target>Email:</target>
-      </trans-unit>
-      <trans-unit id="label.password">
-        <source>label.password</source>
-        <target>Hasło:</target>
-      </trans-unit>
-      <trans-unit id="title.change_password">
-        <source>title.change_password</source>
-        <target>Zmień swoje dane</target>
-      </trans-unit>
-      <trans-unit id="label_new_password">
-        <source>label_new_password</source>
-        <target>Nowe hasło:</target>
-      </trans-unit>
-      <trans-unit id="label_repeat_password">
-        <source>label_repeat_password</source>
-        <target>Powtórz hasło:</target>
-      </trans-unit>
-      <trans-unit id="message.changed_successfully">
-        <source>message.changed_successfully</source>
-        <target>Zmieniono pomyślnie</target>
-      </trans-unit>
-      <trans-unit id="title.account_panel">
-        <source>title.account_panel</source>
-        <target>Panel konta</target>
-     </trans-unit>
-     <trans-unit id="action.submit">
-       <source>action.submit</source>
-       <target>Potwierdź</target>
-     </trans-unit>
-
-
-    </body>
-  </file>
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="action.back_to_list">
+                <source>action.back_to_list</source>
+                <target>Powrót do listy</target>
+            </trans-unit>
+            <trans-unit id="action.create">
+                <source>action.create</source>
+                <target>Stwórz</target>
+            </trans-unit>
+            <trans-unit id="action.edit">
+                <source>action.edit</source>
+                <target>Edytuj</target>
+            </trans-unit>
+            <trans-unit id="action.delete">
+                <source>action.delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            <trans-unit id="action_login">
+                <source>action_login</source>
+                <target>Zaloguj</target>
+            </trans-unit>
+            <trans-unit id="action_logout">
+                <source>action_logout</source>
+                <target>Wyloguj</target>
+            </trans-unit>
+            <trans-unit id="action.login">
+                <source>action.login</source>
+                <target>Zaloguj</target>
+            </trans-unit>
+            <trans-unit id="action.logout">
+                <source>action.logout</source>
+                <target>Wyloguj</target>
+            </trans-unit>
+            <trans-unit id="action.save">
+                <source>action.save</source>
+                <target>Zapisz</target>
+            </trans-unit>
+            <trans-unit id="action.submit">
+                <source>action.submit</source>
+                <target>Prześlij</target>
+            </trans-unit>
+            <trans-unit id="action.show">
+                <source>action.show</source>
+                <target>Szczegóły</target>
+            </trans-unit>
+            <trans-unit id="action.view">
+                <source>action.view</source>
+                <target>Szczegóły</target>
+            </trans-unit>
+            <trans-unit id="label.actions">
+                <source>label.actions</source>
+                <target>Akcje</target>
+            </trans-unit>
+            <trans-unit id="label.category">
+                <source>label.category</source>
+                <target>Kategoria</target>
+            </trans-unit>
+            <trans-unit id="label.id">
+                <source>label.id</source>
+                <target>Id</target>
+            </trans-unit>
+            <trans-unit id="label.content">
+                <source>label.content</source>
+                <target>Treść</target>
+            </trans-unit>
+            <trans-unit id="label.created_at">
+                <source>label.created_at</source>
+                <target>Data utworzenia</target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>Nowe hasło</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Hasło</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Powtórz hasło</target>
+            </trans-unit>
+            <trans-unit id="label.none">
+                <source>label.none</source>
+                <target>Brak</target>
+            </trans-unit>
+            <trans-unit id="label.note">
+                <source>label.note</source>
+                <target>Notatka</target>
+            </trans-unit>
+            <trans-unit id="label.task">
+                <source>label.task</source>
+                <target>Zadanie</target>
+            </trans-unit>
+            <trans-unit id="label.title">
+                <source>label.title</source>
+                <target>Tytuł</target>
+            </trans-unit>
+            <trans-unit id="label.updated_at">
+                <source>label.updated_at</source>
+                <target>Data edycji</target>
+            </trans-unit>
+            <trans-unit id="message.category_contains_tasks">
+                <source>message.category_contains_tasks</source>
+                <target>Kategoria przypisana do zadania.</target>
+            </trans-unit>
+            <trans-unit id="message.category_not_found">
+                <source>message.category_not_found</source>
+                <target>Nie znaleziono kategorii.</target>
+            </trans-unit>
+            <trans-unit id="message.changed_successfully">
+                <source>message.changed_successfully</source>
+                <target>Zmieniono.</target>
+            </trans-unit>
+            <trans-unit id="message.created_successfully">
+                <source>message.created_successfully</source>
+                <target>Utworzono.</target>
+            </trans-unit>
+            <trans-unit id="message.deleted_successfully">
+                <source>message.deleted_successfully</source>
+                <target>Usunięto.</target>
+            </trans-unit>
+            <trans-unit id="message.edited_successfully">
+                <source>message.edited_successfully</source>
+                <target>Edytowano.</target>
+            </trans-unit>
+            <trans-unit id="message.empty_list">
+                <source>message.empty_list</source>
+                <target>Lista jest pusta.</target>
+            </trans-unit>
+            <trans-unit id="message.form_error">
+                <source>message.form_error</source>
+                <target>Błąd formularza.</target>
+            </trans-unit>
+            <trans-unit id="message.note_not_found">
+                <source>message.note_not_found</source>
+                <target>Nie znaleziono notatki.</target>
+            </trans-unit>
+            <trans-unit id="message.passwords_do_not_match">
+                <source>message.passwords_do_not_match</source>
+                <target>Hasła muszą się zgadzać.</target>
+            </trans-unit>
+            <trans-unit id="message.record_not_found">
+                <source>message.record_not_found</source>
+                <target>Nie znaleziono rekordu.</target>
+            </trans-unit>
+            <trans-unit id="message.task_not_found">
+                <source>message.task_not_found</source>
+                <target>Nie znaleziono zadania.</target>
+            </trans-unit>
+            <trans-unit id="message.you_are_logged">
+                <source>message.you_are_logged</source>
+                <target>Jesteś zalogowany jako </target>
+            </trans-unit>
+            <trans-unit id="title.account_panel">
+                <source>title.account_panel</source>
+                <target>Konto</target>
+            </trans-unit>
+            <trans-unit id="title.category_create">
+                <source>title.category_create</source>
+                <target>Stwórz kategorię</target>
+            </trans-unit>
+            <trans-unit id="title.category_delete">
+                <source>title.category_delete</source>
+                <target>Usuń kategorię #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.category_details">
+                <source>title.category_details</source>
+                <target>Szczegóły kategorii #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.category_edit">
+                <source>title.category_edit</source>
+                <target>Edytuj kategorię #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.category_list">
+                <source>title.category_list</source>
+                <target>Lista kategorii</target>
+            </trans-unit>
+            <trans-unit id="title.change_password">
+                 <source>title.change_password</source>
+                 <target>Zmień hasło lub email</target>
+            </trans-unit>
+            <trans-unit id="title.login">
+                 <source>title.login</source>
+                 <target>Zaloguj się</target>
+            </trans-unit>
+            <trans-unit id="title.note_create">
+                <source>title.note_create</source>
+                <target>Stwórz notatkę</target>
+            </trans-unit>
+            <trans-unit id="title.note_delete">
+                <source>title.note_delete</source>
+                <target>Usuń notatkę #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.note_details">
+                <source>title.note_details</source>
+                <target>Szczegóły notatki #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.note_edit">
+                <source>title.note_edit</source>
+                <target>Edytuj notatkę #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.note_list">
+                <source>title.note_list</source>
+                <target>Lista notatek</target>
+            </trans-unit>
+            <trans-unit id="title.task_create">
+                <source>title.task_create</source>
+                <target>Stwórz zadanie</target>
+            </trans-unit>
+            <trans-unit id="title.task_delete">
+                <source>title.task_delete</source>
+                <target>Usuń zadanie #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.task_details">
+                <source>title.task_details</source>
+                <target>Szczegóły zadania #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.task_edit">
+                <source>title.task_edit</source>
+                <target>Edytuj zadanie #%id%</target>
+            </trans-unit>
+            <trans-unit id="title.task_list">
+                <source>title.task_list</source>
+                <target>Lista zadań</target>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>
