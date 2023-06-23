@@ -26,6 +26,9 @@ class UserDataService implements UserDataServiceInterface
 
     /**
      * Constructor.
+     *
+     * @param UserRepository              $userRepository  User Repository
+     * @param UserPasswordHasherInterface $passwordEncoder Password Hasher
      */
     public function __construct(UserRepository $userRepository, UserPasswordHasherInterface $passwordEncoder)
     {
@@ -35,8 +38,13 @@ class UserDataService implements UserDataServiceInterface
 
     /**
      * Save user.
+     *
+     * @param User        $user             User
+     * @param string|null $newPlainPassword new plain password
+     *
+     * @return void Void
      */
-    public function save(User $user, ?string $newPlainPassword = null)
+    public function save(User $user, string $newPlainPassword = null)
     {
         if ($newPlainPassword) {
             $encodedPassword = $this->passwordEncoder->hashPassword(

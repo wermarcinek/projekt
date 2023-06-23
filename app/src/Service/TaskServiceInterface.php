@@ -38,6 +38,11 @@ interface TaskServiceInterface
 
     /**
      * Prepare filters for the tasks list.
+     *
+     * @param array<string, int> $filters Raw filters from request
+     *
+     * @return array<string, object> Result array of filters
+     *
      */
     public function prepareFilters(array $filters): array;
 }

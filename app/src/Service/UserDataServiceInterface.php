@@ -1,5 +1,4 @@
 <?php
-
 /**
  * User data Service Interface.
  */
@@ -15,6 +14,11 @@ interface UserDataServiceInterface
 {
     /**
      * Save user.
+     *
+     * @param User        $user             User
+     * @param string|null $newPlainPassword New plain password
+     *
+     * @return mixed Void
      */
-    public function save(User $user, ?string $newPlainPassword = null);
+    public function save(User $user, string $newPlainPassword = null);
 }

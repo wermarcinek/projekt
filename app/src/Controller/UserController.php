@@ -40,10 +40,6 @@ class UserController extends AbstractController
 
     /**
      * Edit Function.
-     *
-     * @param Request $request
-     *
-     * @return Response
      */
     #[Route(
         '/panel',
