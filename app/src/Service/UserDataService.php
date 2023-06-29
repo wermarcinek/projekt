@@ -39,21 +39,28 @@ class UserDataService implements UserDataServiceInterface
     /**
      * Save user.
      *
-     * @param User        $user             User
-     * @param string|null $newPlainPassword new plain password
+     * @param User        $user        User
+     * @param string|null $newPassword new password
      *
      * @return void Void
      */
-    public function save(User $user, string $newPlainPassword = null)
+    public function changePassword(User $user, string $newPassword): void
     {
-        if ($newPlainPassword) {
+        if ($newPassword) {
             $encodedPassword = $this->passwordEncoder->hashPassword(
                 $user,
-                $newPlainPassword
+                $newPassword
             );
 
             $user->setPassword($encodedPassword);
         }
+
+        $this->userRepository->save($user);
+    }
+
+    public function changeEmail(User $user, string $newEmail): void
+    {
+        $user->setEmail($newEmail);
 
         $this->userRepository->save($user);
     }

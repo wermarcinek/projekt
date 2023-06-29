@@ -74,17 +74,37 @@
                 <source>label.email</source>
                 <target>Email</target>
             </trans-unit>
-            <trans-unit id="label.new_password">
-                <source>label.new_password</source>
-                <target>New password</target>
+            <trans-unit id="title.email">
+                <source>title.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="title.password_edit">
+                <source>title.password_edit</source>
+                <target>Change password</target>
+            </trans-unit>
+            <trans-unit id="title.change_email">
+                <source>title.change_email</source>
+                <target>Change email</target>
+            </trans-unit>
+            <trans-unit id="label.newEmail">
+                <source>label.newEmail</source>
+                <target>New email</target>
+            </trans-unit>
+            <trans-unit id="title.email_edit">
+                <source>title.email_edit</source>
+                <target>Edit email</target>
+            </trans-unit>
+            <trans-unit id="label.newPassword">
+                <source>label.newPassword</source>
+                <target>New password:</target>
             </trans-unit>
             <trans-unit id="label.password">
                 <source>label.password</source>
-                <target>Password</target>
+                <target>Password:</target>
             </trans-unit>
-            <trans-unit id="label.repeat_password">
-                <source>label.repeat_password</source>
-                <target>Repeat password</target>
+            <trans-unit id="label.currentPassword">
+                <source>label.currentPassword</source>
+                <target>Password:</target>
             </trans-unit>
             <trans-unit id="label.none">
                 <source>label.none</source>
@@ -130,6 +150,22 @@
                 <source>message.edited_successfully</source>
                 <target>Edited successfully.</target>
             </trans-unit>
+            <trans-unit id="message.email_edited_successfully">
+                <source>message.email_edited_successfully</source>
+                <target>Email updated..</target>
+            </trans-unit>
+            <trans-unit id="message.password_edited_successfully">
+                <source>message.password_edited_successfully</source>
+                <target>Password updated..</target>
+            </trans-unit>
+            <trans-unit id="message.invalid_password">
+                <source>message.invalid_password</source>
+                <target>Invalid password.</target>
+            </trans-unit>
+            <trans-unit id="message.invalid_email">
+                <source>message.invalid_email</source>
+                <target>Invalid email.</target>
+            </trans-unit>
             <trans-unit id="message.empty_list">
                 <source>message.empty_list</source>
                 <target>List is empty.</target>
@@ -154,8 +190,8 @@
                 <source>message.task_not_found</source>
                 <target>Task not found.</target>
             </trans-unit>
-            <trans-unit id="message.you_are_logged">
-                <source>message.you_are_logged</source>
+            <trans-unit id="label.logged_as">
+                <source>label.logged_as</source>
                 <target>You are logged in as </target>
             </trans-unit>
             <trans-unit id="title.account_panel">

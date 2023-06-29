@@ -176,10 +176,15 @@ Search.appendIndex(
             "summary": "Constructor.",
             "url": "classes/App-Controller-UserController.html#method___construct"
         },                {
-            "fqsen": "\\App\\Controller\\UserController\u003A\u003AeditPass\u0028\u0029",
-            "name": "editPass",
+            "fqsen": "\\App\\Controller\\UserController\u003A\u003AeditPassword\u0028\u0029",
+            "name": "editPassword",
             "summary": "Edit\u0020Function.",
-            "url": "classes/App-Controller-UserController.html#method_editPass"
+            "url": "classes/App-Controller-UserController.html#method_editPassword"
+        },                {
+            "fqsen": "\\App\\Controller\\UserController\u003A\u003AeditEmail\u0028\u0029",
+            "name": "editEmail",
+            "summary": "Edit\u0020email\u0020route.",
+            "url": "classes/App-Controller-UserController.html#method_editEmail"
         },                {
             "fqsen": "\\App\\Controller\\UserController\u003A\u003A\u0024userService",
             "name": "userService",
@@ -1161,10 +1166,15 @@ Search.appendIndex(
             "summary": "Constructor.",
             "url": "classes/App-Service-UserDataService.html#method___construct"
         },                {
-            "fqsen": "\\App\\Service\\UserDataService\u003A\u003Asave\u0028\u0029",
-            "name": "save",
+            "fqsen": "\\App\\Service\\UserDataService\u003A\u003AchangePassword\u0028\u0029",
+            "name": "changePassword",
             "summary": "Save\u0020user.",
-            "url": "classes/App-Service-UserDataService.html#method_save"
+            "url": "classes/App-Service-UserDataService.html#method_changePassword"
+        },                {
+            "fqsen": "\\App\\Service\\UserDataService\u003A\u003AchangeEmail\u0028\u0029",
+            "name": "changeEmail",
+            "summary": "change\u0020email\u0020function.",
+            "url": "classes/App-Service-UserDataService.html#method_changeEmail"
         },                {
             "fqsen": "\\App\\Service\\UserDataService\u003A\u003A\u0024userRepository",
             "name": "userRepository",
@@ -1181,10 +1191,55 @@ Search.appendIndex(
             "summary": "Interface\u0020UserDataServiceInterface.",
             "url": "classes/App-Service-UserDataServiceInterface.html"
         },                {
-            "fqsen": "\\App\\Service\\UserDataServiceInterface\u003A\u003Asave\u0028\u0029",
-            "name": "save",
-            "summary": "Save\u0020user.",
-            "url": "classes/App-Service-UserDataServiceInterface.html#method_save"
+            "fqsen": "\\App\\Service\\UserDataServiceInterface\u003A\u003AchangePassword\u0028\u0029",
+            "name": "changePassword",
+            "summary": "change\u0020password\u0020function.",
+            "url": "classes/App-Service-UserDataServiceInterface.html#method_changePassword"
+        },                {
+            "fqsen": "\\App\\Service\\UserDataServiceInterface\u003A\u003AchangeEmail\u0028\u0029",
+            "name": "changeEmail",
+            "summary": "change\u0020email\u0020function.",
+            "url": "classes/App-Service-UserDataServiceInterface.html#method_changeEmail"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangeEmailType",
+            "name": "ChangeEmailType",
+            "summary": "Class\u0020UserType.",
+            "url": "classes/Form-Type-ChangeEmailType.html"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangeEmailType\u003A\u003AbuildForm\u0028\u0029",
+            "name": "buildForm",
+            "summary": "Builds\u0020the\u0020form.",
+            "url": "classes/Form-Type-ChangeEmailType.html#method_buildForm"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangeEmailType\u003A\u003AconfigureOptions\u0028\u0029",
+            "name": "configureOptions",
+            "summary": "Configures\u0020the\u0020options\u0020for\u0020this\u0020type.",
+            "url": "classes/Form-Type-ChangeEmailType.html#method_configureOptions"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangeEmailType\u003A\u003AgetBlockPrefix\u0028\u0029",
+            "name": "getBlockPrefix",
+            "summary": "Returns\u0020the\u0020prefix\u0020of\u0020the\u0020template\u0020block\u0020name\u0020for\u0020this\u0020type.",
+            "url": "classes/Form-Type-ChangeEmailType.html#method_getBlockPrefix"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangePasswordType",
+            "name": "ChangePasswordType",
+            "summary": "Class\u0020UserType.",
+            "url": "classes/Form-Type-ChangePasswordType.html"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangePasswordType\u003A\u003AbuildForm\u0028\u0029",
+            "name": "buildForm",
+            "summary": "Builds\u0020the\u0020form.",
+            "url": "classes/Form-Type-ChangePasswordType.html#method_buildForm"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangePasswordType\u003A\u003AconfigureOptions\u0028\u0029",
+            "name": "configureOptions",
+            "summary": "Configures\u0020the\u0020options\u0020for\u0020this\u0020type.",
+            "url": "classes/Form-Type-ChangePasswordType.html#method_configureOptions"
+        },                {
+            "fqsen": "\\Form\\Type\\ChangePasswordType\u003A\u003AgetBlockPrefix\u0028\u0029",
+            "name": "getBlockPrefix",
+            "summary": "Returns\u0020the\u0020prefix\u0020of\u0020the\u0020template\u0020block\u0020name\u0020for\u0020this\u0020type.",
+            "url": "classes/Form-Type-ChangePasswordType.html#method_getBlockPrefix"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -1220,6 +1275,16 @@ Search.appendIndex(
             "name": "Form",
             "summary": "",
             "url": "namespaces/app-form.html"
+        },                {
+            "fqsen": "\\Form\\Type",
+            "name": "Type",
+            "summary": "",
+            "url": "namespaces/form-type.html"
+        },                {
+            "fqsen": "\\Form",
+            "name": "Form",
+            "summary": "",
+            "url": "namespaces/form.html"
         },                {
             "fqsen": "\\App",
             "name": "App",

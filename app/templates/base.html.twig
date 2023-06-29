@@ -30,11 +30,7 @@
             <li class="nav-item">
                 <span class="navbar-brand mb-0">{{ app.user.email }}</span>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('user_panel', {id: app.user.id }) }}" title="{{ 'title.account_panel'|trans }}">
-                    {{ 'title.account_panel'|trans }}
-                </a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('app_logout') }}">{{ 'action.logout'|trans }}</a>
             </li>
@@ -42,6 +38,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('app_login') }}">{{ 'action.login'|trans }}</a>
             </li>
+        {% endif %}
+        {% if app.user %}
+            <a href="{{ path('change_password') }}">{{ 'title.password_edit'|trans }}</a>
+            <a href="{{ path('change_email') }}">{{ 'title.change_email'|trans }}</a>
         {% endif %}
     </ul>
 </nav>

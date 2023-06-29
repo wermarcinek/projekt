@@ -13,12 +13,12 @@ use App\Entity\User;
 interface UserDataServiceInterface
 {
     /**
-     * Save user.
-     *
-     * @param User        $user             User
-     * @param string|null $newPlainPassword New plain password
-     *
-     * @return mixed Void
+     * change password function.
      */
-    public function save(User $user, string $newPlainPassword = null);
+    public function changePassword(User $user, string $newPassword): void;
+
+    /**
+     * change email function.
+     */
+    public function changeEmail(User $user, string $newEmail): void;
 }

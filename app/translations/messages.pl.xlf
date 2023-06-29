@@ -70,21 +70,41 @@
                 <source>label.created_at</source>
                 <target>Data utworzenia</target>
             </trans-unit>
-            <trans-unit id="label.email">
-                <source>label.email</source>
+            <trans-unit id="title.email">
+                <source>title.email</source>
                 <target>Email</target>
             </trans-unit>
-            <trans-unit id="label.new_password">
-                <source>label.new_password</source>
-                <target>Nowe hasło</target>
+            <trans-unit id="title.password_edit">
+                <source>title.password_edit</source>
+                <target>Zmień hasło</target>
+            </trans-unit>
+            <trans-unit id="title.change_email">
+                <source>title.change_email</source>
+                <target>Zmień email</target>
+            </trans-unit>
+            <trans-unit id="label.newEmail">
+                 <source>label.newEmail</source>
+                 <target>Nowy email</target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                 <source>label.email</source>
+                 <target>Email</target>
+            </trans-unit>
+            <trans-unit id="title.email_edit">
+                 <source>title.email_edit</source>
+                 <target>Zmień email</target>
+            </trans-unit>
+            <trans-unit id="label.newPassword">
+                <source>label.newPassword</source>
+                <target>Nowe hasło:</target>
             </trans-unit>
             <trans-unit id="label.password">
                 <source>label.password</source>
-                <target>Hasło</target>
+                <target>Hasło:</target>
             </trans-unit>
-            <trans-unit id="label.repeat_password">
-                <source>label.repeat_password</source>
-                <target>Powtórz hasło</target>
+            <trans-unit id="label.currentPassword">
+                <source>label.currentPassword</source>
+                <target>Hasło:</target>
             </trans-unit>
             <trans-unit id="label.none">
                 <source>label.none</source>
@@ -142,9 +162,21 @@
                 <source>message.note_not_found</source>
                 <target>Nie znaleziono notatki.</target>
             </trans-unit>
-            <trans-unit id="message.passwords_do_not_match">
-                <source>message.passwords_do_not_match</source>
-                <target>Hasła muszą się zgadzać.</target>
+            <trans-unit id="message.email_edited_successfully">
+                <source>message.email_edited_successfully</source>
+                <target>Zaktualizowano email.</target>
+            </trans-unit>
+            <trans-unit id="message.password_edited_successfully">
+                <source>message.password_edited_successfully</source>
+                <target>Zaktualizowano hasło.</target>
+            </trans-unit>
+            <trans-unit id="message.invalid_password">
+                <source>message.invalid_password</source>
+                <target>Nieprawidłowe hasło.</target>
+            </trans-unit>
+            <trans-unit id="message.invalid_email">
+                <source>message.invalid_email</source>
+                <target>Nieprawidłowy email.</target>
             </trans-unit>
             <trans-unit id="message.record_not_found">
                 <source>message.record_not_found</source>
@@ -154,8 +186,12 @@
                 <source>message.task_not_found</source>
                 <target>Nie znaleziono zadania.</target>
             </trans-unit>
-            <trans-unit id="message.you_are_logged">
-                <source>message.you_are_logged</source>
+            <trans-unit id="message.passwords_do_not_match ">
+                <source>message.passwords_do_not_match</source>
+                <target>Hasła są różne.</target>
+            </trans-unit>
+            <trans-unit id="label.logged_as">
+                <source>label.logged_as</source>
                 <target>Jesteś zalogowany jako </target>
             </trans-unit>
             <trans-unit id="title.account_panel">
