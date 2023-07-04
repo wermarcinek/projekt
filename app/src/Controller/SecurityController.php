@@ -11,16 +11,16 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 /**
- * Class SecurityController
+ * Class SecurityController.
  */
 class SecurityController extends AbstractController
 {
     /**
      * Login action.
      *
-     * @param AuthenticationUtils $authenticationUtils The authentication utils.
+     * @param AuthenticationUtils $authenticationUtils the authentication utils
      *
-     * @return Response The response.
+     * @return Response the response
      *
      * @Route(path="/login", name="app_login")
      */
@@ -42,9 +42,7 @@ class SecurityController extends AbstractController
     /**
      * Logout action.
      *
-     * @return void
-     *
-     * @throws \LogicException This method can be blank - it will be intercepted by the logout key on your firewall.
+     * @throws \LogicException this method can be blank - it will be intercepted by the logout key on your firewall
      *
      * @Route(path="/logout", name="app_logout")
      */

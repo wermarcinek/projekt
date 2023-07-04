@@ -15,20 +15,16 @@ interface UserDataServiceInterface
     /**
      * Change the password for a user.
      *
-     * @param User   $user        The user entity.
-     * @param string $newPassword The new password.
-     *
-     * @return void
+     * @param User   $user        the user entity
+     * @param string $newPassword the new password
      */
     public function changePassword(User $user, string $newPassword): void;
 
     /**
      * Change the email for a user.
      *
-     * @param User   $user     The user entity.
-     * @param string $newEmail The new email address.
-     *
-     * @return void
+     * @param User   $user     the user entity
+     * @param string $newEmail the new email address
      */
     public function changeEmail(User $user, string $newEmail): void;
 }

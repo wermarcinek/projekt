@@ -147,7 +147,7 @@ class Category
      *
      * @param string $slug Slug
      *
-     * @return self
+     * @return $this Slug
      */
     public function setSlug(string $slug): self
     {

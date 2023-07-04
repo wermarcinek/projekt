@@ -57,6 +57,7 @@ class UserDataService implements UserDataServiceInterface
 
         $this->userRepository->save($user);
     }
+
     /**
      * Change the email address for a user.
      *

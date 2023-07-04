@@ -24,23 +24,19 @@ class UserController extends AbstractController
 {
     /**
      * User service.
-     *
-     * @var UserDataServiceInterface
      */
     private UserDataServiceInterface $userService;
 
     /**
      * Translator.
-     *
-     * @var TranslatorInterface
      */
     private TranslatorInterface $translator;
 
     /**
      * UserController constructor.
      *
-     * @param UserDataServiceInterface $userService The user service.
-     * @param TranslatorInterface      $translator  The translator.
+     * @param UserDataServiceInterface $userService the user service
+     * @param TranslatorInterface      $translator  the translator
      */
     public function __construct(UserDataServiceInterface $userService, TranslatorInterface $translator)
     {
@@ -51,9 +47,9 @@ class UserController extends AbstractController
     /**
      * Edit password route.
      *
-     * @param Request $request The request object.
+     * @param Request $request the request object
      *
-     * @return Response The response.
+     * @return Response the response
      *
      * @Route("/change_password", name="change_password", methods={"GET", "POST"})
      *
@@ -95,9 +91,9 @@ class UserController extends AbstractController
     /**
      * Edit email route.
      *
-     * @param Request $request The request object.
+     * @param Request $request the request object
      *
-     * @return Response The response.
+     * @return Response the response
      *
      * @Route("/change_email", name="change_email", methods={"GET", "POST"})
      *

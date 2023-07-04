@@ -164,7 +164,7 @@ class Note
      *
      * @param Category|null $category Category
      *
-     * @return self
+     * @return $this Category
      */
     public function setCategory(?Category $category): self
     {

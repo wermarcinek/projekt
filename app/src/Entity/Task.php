@@ -130,8 +130,6 @@ class Task
      * Setter for title.
      *
      * @param string|null $title Title
-     *
-     * @return void
      */
     public function setTitle(?string $title): void
     {
@@ -153,7 +151,7 @@ class Task
      *
      * @param Category|null $category Category
      *
-     * @return self
+     * @return $this Task
      */
     public function setCategory(?Category $category): self
     {
