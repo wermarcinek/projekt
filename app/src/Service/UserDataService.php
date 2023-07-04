@@ -57,7 +57,14 @@ class UserDataService implements UserDataServiceInterface
 
         $this->userRepository->save($user);
     }
-
+    /**
+     * Change the email address for a user.
+     *
+     * @param User   $user     User entity
+     * @param string $newEmail New email address
+     *
+     * @return void Void
+     */
     public function changeEmail(User $user, string $newEmail): void
     {
         $user->setEmail($newEmail);

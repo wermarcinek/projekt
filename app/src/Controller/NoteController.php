@@ -82,7 +82,7 @@ class NoteController extends AbstractController
      *
      * @return Response HTTP response
      */
-    #[Route('/create', name: 'note_create', methods: 'GET|POST', )]
+    #[Route('/create', name: 'note_create', methods: 'GET|POST')]
     public function create(Request $request): Response
     {
         $note = new Note();

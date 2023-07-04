@@ -163,6 +163,8 @@ class Note
      * Setter for category.
      *
      * @param Category|null $category Category
+     *
+     * @return self
      */
     public function setCategory(?Category $category): self
     {

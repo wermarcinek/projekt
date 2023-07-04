@@ -8,6 +8,7 @@ namespace App\Controller;
 use App\Service\UserDataServiceInterface;
 use Form\Type\ChangeEmailType;
 use Form\Type\ChangePasswordType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,21 +17,30 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * Class UserController.
+ *
+ * @Route("/user")
  */
 class UserController extends AbstractController
 {
     /**
      * User service.
+     *
+     * @var UserDataServiceInterface
      */
     private UserDataServiceInterface $userService;
 
     /**
      * Translator.
+     *
+     * @var TranslatorInterface
      */
     private TranslatorInterface $translator;
 
     /**
-     * Constructor.
+     * UserController constructor.
+     *
+     * @param UserDataServiceInterface $userService The user service.
+     * @param TranslatorInterface      $translator  The translator.
      */
     public function __construct(UserDataServiceInterface $userService, TranslatorInterface $translator)
     {
@@ -39,7 +49,15 @@ class UserController extends AbstractController
     }
 
     /**
-     * Edit Function.
+     * Edit password route.
+     *
+     * @param Request $request The request object.
+     *
+     * @return Response The response.
+     *
+     * @Route("/change_password", name="change_password", methods={"GET", "POST"})
+     *
+     * @IsGranted("ROLE_USER")
      */
     #[Route('/change_password', name: 'change_password', methods: 'GET|POST')]
     #[IsGranted('ROLE_USER')]
@@ -76,6 +94,14 @@ class UserController extends AbstractController
 
     /**
      * Edit email route.
+     *
+     * @param Request $request The request object.
+     *
+     * @return Response The response.
+     *
+     * @Route("/change_email", name="change_email", methods={"GET", "POST"})
+     *
+     * @IsGranted("ROLE_USER")
      */
     #[Route('/change_email', name: 'change_email', methods: 'GET|POST')]
     #[IsGranted('ROLE_USER')]

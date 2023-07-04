@@ -18,8 +18,7 @@ class AppFixtures extends Fixture
     /**
      * Load.
      *
-     * @psalm-suppress PossiblyNullReference
-     * @psalm-suppress UnusedClosureParam
+     * @param ObjectManager $manager Object Manager
      */
     public function load(ObjectManager $manager): void
     {

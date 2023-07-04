@@ -1,4 +1,7 @@
 <?php
+/**
+ * Security controller.
+ */
 
 namespace App\Controller;
 
@@ -7,8 +10,20 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
+/**
+ * Class SecurityController
+ */
 class SecurityController extends AbstractController
 {
+    /**
+     * Login action.
+     *
+     * @param AuthenticationUtils $authenticationUtils The authentication utils.
+     *
+     * @return Response The response.
+     *
+     * @Route(path="/login", name="app_login")
+     */
     #[Route(path: '/login', name: 'app_login')]
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
@@ -24,6 +39,15 @@ class SecurityController extends AbstractController
         return $this->render('security/login.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
     }
 
+    /**
+     * Logout action.
+     *
+     * @return void
+     *
+     * @throws \LogicException This method can be blank - it will be intercepted by the logout key on your firewall.
+     *
+     * @Route(path="/logout", name="app_logout")
+     */
     #[Route(path: '/logout', name: 'app_logout')]
     public function logout(): void
     {
